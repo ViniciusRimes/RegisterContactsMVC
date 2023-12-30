@@ -1,0 +1,64 @@
+﻿@{
+	ViewData["Title"] = "Listagem de contatos";
+}
+<div class="text-center">
+	
+	<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+		<a asp-asp-controller="Contact" asp-action = "Create" role="button" class="btn btn-primary">Adicionar novo contato</a>
+	</div>
+	<br/>
+	<h1>Listagem de contatos</h1>
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">Nome</th>
+				<th scope="col">E-mail</th>
+				<th scope="col">Celular</th>
+				<th scope="col"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">1</th>
+				<td>Vinicius</td>
+				<td>vinicius@gmail.com</td>
+				<td>111111111</td>
+				<td>
+					<div class="btn-group" role="group">
+						<a asp-controller ="Contact" asp-action ="Edit" role="button" class="btn btn-primary">Editar</a>
+						<a asp-controller ="Contact" asp-action ="DeleteConfirmation" role="button" class="btn btn-danger">Apagar</a>
+					</div>
+				</td>
+
+			</tr>
+			<tr>
+				<th scope="row">2</th>
+				<td>Joana</td>
+				<td>joana@gmail.com</td>
+				<td>2222222222</td>
+				<td>
+					<div class="btn-group" role="group">
+						<a asp-controller ="Contact" asp-action ="Edit" role="button" class="btn btn-primary">Editar</a>
+						<a asp-controller ="Contact" asp-action ="DeleteConfirmation" role="button" class="btn btn-danger">Apagar</a>
+					</div>
+				</td>
+
+			</tr>
+			<tr>
+				<th scope="row">3</th>
+				<td>Pedro</td>
+				<td>pedro@gmail.com</td>
+				<td>3333333333</td>
+				<td>
+					<div class="btn-group" role="group">
+						<a asp-controller ="Contact" asp-action ="Edit" role="button" class="btn btn-primary">Editar</a>
+						<a asp-controller ="Contact" asp-action ="DeleteConfirmation" role="button" class="btn btn-danger">Apagar</a>
+					</div>
+				</td>
+
+			</tr>
+		</tbody>
+	</table>
+</div>
